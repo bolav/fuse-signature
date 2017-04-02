@@ -1,0 +1,14 @@
+<App>
+	<JavaScript>
+		exports.save = function () {
+			sp.save("test.png");
+		}
+	</JavaScript>
+	<Panel Width="100%" Height="100%">
+		<SavePanel Background="#ffff" ux:Name="sp" Alignment="Center" Width="100%" Height="100%">
+					<Signature ux:Name="sign" Alignment="Center" Width="100%" Height="100%" ClipToBounds="true"/>
+					<Image Url="https://img.ogol.io/fusetools.com/ntebc1.png?w=1920&amp;h=460&amp;padding=0.1" />
+		</SavePanel>
+		<Button Text="SAVE!" Clicked="{save}" />
+	</Panel>
+</App>
